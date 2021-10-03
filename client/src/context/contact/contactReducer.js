@@ -41,6 +41,6 @@ export default (state, action) => {
     case CLEAR_FILTER:
       return { ...state, filtered: null };
     default:
-      return state;
+      throw new Error(`Unsupported type of: ${action.type}`);
   }
 };
