@@ -42,7 +42,7 @@ const ContactForm = () => {
     clearCurrent();
   };
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className='form-container'>
       <h2 className='text-primary'>
         {current ? 'Edit Contact' : 'Add Contact'}
       </h2>
