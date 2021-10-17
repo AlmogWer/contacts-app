@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Full stact MERN Project - Personal contact app manager with POST/PUT/DELETE/GET methods - using React hooks, Context, JWT Authentication.
+Full Stack MERN Project - Personal contact app manager with POST/PUT/DELETE/GET methods - using React hooks, Context, JWT Authentication.
 
 ## Built with
 
