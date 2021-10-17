@@ -38,8 +38,10 @@ const Navbar = ({ title, icon }) => {
   );
   return (
     <div className='navbar bg-primary'>
-      <h1>
-        <i className={icon} /> {title}
+      <h1 style={{ cursor: 'pointer' }}>
+        <Link to='/'>
+          <i className={icon} /> {title}
+        </Link>
       </h1>
       <ul>{isAuthenticated ? authLinks : guestLinks}</ul>
     </div>
