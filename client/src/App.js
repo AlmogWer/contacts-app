@@ -6,7 +6,7 @@ import About from './components/pages/About.js';
 import Register from './components/auth/Register.js';
 import Login from './components/auth/Login.js';
 import Alerts from './components/layout/Alerts.js';
-
+import PrivateRoute from './components/routing/PrivateRoute';
 import { Fragment } from 'react';
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
@@ -28,7 +28,7 @@ const App = () => {
               <div className='container'>
                 <Alerts />
                 <Switch>
-                  <Route exact path='/' component={Home} />
+                  <PrivateRoute exact path='/' component={Home} />
                   <Route exact path='/about' component={About} />
                   <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
